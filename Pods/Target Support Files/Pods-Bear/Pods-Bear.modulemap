@@ -1,0 +1,6 @@
+framework module Pods_Bear {
+  umbrella header "Pods-Bear-umbrella.h"
+
+  export *
+  module * { export * }
+}

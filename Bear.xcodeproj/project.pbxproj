@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2727A6AC1F930FE70045DC8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727A6AB1F930FE70045DC8F /* LoginViewController.swift */; };
+		2727A6AE1F9310060045DC8F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727A6AD1F9310060045DC8F /* RegisterViewController.swift */; };
+		2727A6B01F9310280045DC8F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727A6AF1F9310280045DC8F /* WeatherViewController.swift */; };
+		2727A6B21F9312B00045DC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2727A6B11F93113A0045DC8F /* GoogleService-Info.plist */; };
 		27A5000A1F92F2DC0050AACF /* BearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A500091F92F2DC0050AACF /* BearTests.swift */; };
 		27A500151F92F2DC0050AACF /* BearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A500141F92F2DC0050AACF /* BearUITests.swift */; };
 		27A5FFF51F92F2DB0050AACF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A5FFF41F92F2DB0050AACF /* AppDelegate.swift */; };
@@ -14,6 +18,7 @@
 		27A5FFFA1F92F2DB0050AACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A5FFF81F92F2DB0050AACF /* Main.storyboard */; };
 		27A5FFFC1F92F2DB0050AACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A5FFFB1F92F2DB0050AACF /* Assets.xcassets */; };
 		27A5FFFF1F92F2DB0050AACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A5FFFD1F92F2DB0050AACF /* LaunchScreen.storyboard */; };
+		2A61A96CAAF87894EC66E183 /* Pods_Bear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85BA762C3C3B7CD61BF136A /* Pods_Bear.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2727A6AB1F930FE70045DC8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2727A6AD1F9310060045DC8F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2727A6AF1F9310280045DC8F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		2727A6B11F93113A0045DC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27A500001F92F2DB0050AACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27A500051F92F2DC0050AACF /* BearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A500091F92F2DC0050AACF /* BearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearTests.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		27A5FFF91F92F2DB0050AACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27A5FFFB1F92F2DB0050AACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27A5FFFE1F92F2DB0050AACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B00F1F51745FEA3E2DC42C6 /* Pods-Bear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bear/Pods-Bear.debug.xcconfig"; sourceTree = "<group>"; };
+		C85BA762C3C3B7CD61BF136A /* Pods_Bear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C2F3E72A0832E5858F5922 /* Pods-Bear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bear/Pods-Bear.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +80,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A61A96CAAF87894EC66E183 /* Pods_Bear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2727A6AA1F930FD20045DC8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2727A6AB1F930FE70045DC8F /* LoginViewController.swift */,
+				2727A6AD1F9310060045DC8F /* RegisterViewController.swift */,
+				2727A6AF1F9310280045DC8F /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		27A500081F92F2DC0050AACF /* BearTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,10 +118,14 @@
 		27A5FFE81F92F2DB0050AACF = {
 			isa = PBXGroup;
 			children = (
+				2727A6B11F93113A0045DC8F /* GoogleService-Info.plist */,
+				2727A6AA1F930FD20045DC8F /* Controller */,
 				27A5FFF31F92F2DB0050AACF /* Bear */,
 				27A500081F92F2DC0050AACF /* BearTests */,
 				27A500131F92F2DC0050AACF /* BearUITests */,
 				27A5FFF21F92F2DB0050AACF /* Products */,
+				8F57A6E23F2FBAEBDA383691 /* Pods */,
+				D2E4EAB0C9BF6777C55DDBBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +150,23 @@
 				27A500001F92F2DB0050AACF /* Info.plist */,
 			);
 			path = Bear;
+			sourceTree = "<group>";
+		};
+		8F57A6E23F2FBAEBDA383691 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B00F1F51745FEA3E2DC42C6 /* Pods-Bear.debug.xcconfig */,
+				D5C2F3E72A0832E5858F5922 /* Pods-Bear.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2E4EAB0C9BF6777C55DDBBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C85BA762C3C3B7CD61BF136A /* Pods_Bear.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27A500191F92F2DC0050AACF /* Build configuration list for PBXNativeTarget "Bear" */;
 			buildPhases = (
+				C6E53CAA0ECC804E03104D7C /* [CP] Check Pods Manifest.lock */,
 				27A5FFED1F92F2DB0050AACF /* Sources */,
 				27A5FFEE1F92F2DB0050AACF /* Frameworks */,
 				27A5FFEF1F92F2DB0050AACF /* Resources */,
+				4835135F0580C69684E35456 /* [CP] Embed Pods Frameworks */,
+				B0C69BAC480D7A45373408A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,12 +294,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A5FFFF1F92F2DB0050AACF /* LaunchScreen.storyboard in Resources */,
+				2727A6B21F9312B00045DC8F /* GoogleService-Info.plist in Resources */,
 				27A5FFFC1F92F2DB0050AACF /* Assets.xcassets in Resources */,
 				27A5FFFA1F92F2DB0050AACF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4835135F0580C69684E35456 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bear/Pods-Bear-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bear/Pods-Bear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C69BAC480D7A45373408A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bear/Pods-Bear-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E53CAA0ECC804E03104D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27A500011F92F2DC0050AACF /* Sources */ = {
@@ -275,8 +387,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2727A6AC1F930FE70045DC8F /* LoginViewController.swift in Sources */,
+				2727A6B01F9310280045DC8F /* WeatherViewController.swift in Sources */,
 				27A5FFF71F92F2DB0050AACF /* ViewController.swift in Sources */,
 				27A5FFF51F92F2DB0050AACF /* AppDelegate.swift in Sources */,
+				2727A6AE1F9310060045DC8F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +539,11 @@
 		};
 		27A5001A1F92F2DC0050AACF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B00F1F51745FEA3E2DC42C6 /* Pods-Bear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEW6T6TFJQ;
 				INFOPLIST_FILE = Bear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chengen-zheng.Bear";
@@ -438,9 +555,11 @@
 		};
 		27A5001B1F92F2DC0050AACF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C2F3E72A0832E5858F5922 /* Pods-Bear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEW6T6TFJQ;
 				INFOPLIST_FILE = Bear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chengen-zheng.Bear";
