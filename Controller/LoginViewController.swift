@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: name, password: password) { (user, error) in
                 // ...
                 if user != nil {
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "welcome")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "navigation")
                     self.present(vc!, animated: true, completion: nil)
                 }
                 else{

@@ -41,7 +41,7 @@ class RegisterViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                 // ...
                 if user != nil{
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "welcome")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "navigation")
                     self.present(vc!, animated: true, completion: nil)
                 }
                 else{
