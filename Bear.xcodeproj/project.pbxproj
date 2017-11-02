@@ -18,6 +18,12 @@
 		27A5FFFA1F92F2DB0050AACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A5FFF81F92F2DB0050AACF /* Main.storyboard */; };
 		27A5FFFC1F92F2DB0050AACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A5FFFB1F92F2DB0050AACF /* Assets.xcassets */; };
 		27A5FFFF1F92F2DB0050AACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A5FFFD1F92F2DB0050AACF /* LaunchScreen.storyboard */; };
+		27B7A1651FAAA85400108382 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7A1641FAAA85400108382 /* HoshiTextField.swift */; };
+		27B7A1671FAAA85700108382 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7A1661FAAA85700108382 /* TextFieldEffects.swift */; };
+		27B7A16B1FAAA87300108382 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7A16A1FAAA87300108382 /* UserItem.swift */; };
+		27B7A16D1FAAA87D00108382 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7A16C1FAAA87D00108382 /* FriendTableViewController.swift */; };
+		27B7A16F1FAAA88500108382 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7A16E1FAAA88500108382 /* FriendViewController.swift */; };
+		27B7A1711FAAA8DF00108382 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7A1701FAAA8DF00108382 /* CustomButton.swift */; };
 		27C262921F96CCC800840E1C /* SendingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C262911F96CCC800840E1C /* SendingVC.swift */; };
 		27C262941F96DCC800840E1C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C262931F96DCC800840E1C /* FirstViewController.swift */; };
 		27C262961F96DEDF00840E1C /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C262951F96DEDF00840E1C /* MapViewExtension.swift */; };
@@ -60,6 +66,12 @@
 		27A5FFF91F92F2DB0050AACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27A5FFFB1F92F2DB0050AACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27A5FFFE1F92F2DB0050AACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27B7A1641FAAA85400108382 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = ../../geoMessenger/CustomControls/HoshiTextField.swift; sourceTree = "<group>"; };
+		27B7A1661FAAA85700108382 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = ../../geoMessenger/CustomControls/TextFieldEffects.swift; sourceTree = "<group>"; };
+		27B7A16A1FAAA87300108382 /* UserItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserItem.swift; path = "../../geoMessenger/geoMessenger/New Group/UserItem.swift"; sourceTree = "<group>"; };
+		27B7A16C1FAAA87D00108382 /* FriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTableViewController.swift; path = ../../geoMessenger/geoMessenger/FriendTableViewController.swift; sourceTree = "<group>"; };
+		27B7A16E1FAAA88500108382 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendViewController.swift; path = ../../geoMessenger/geoMessenger/FriendViewController.swift; sourceTree = "<group>"; };
+		27B7A1701FAAA8DF00108382 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = ../../geoMessenger/CustomControls/CustomButton.swift; sourceTree = "<group>"; };
 		27C262911F96CCC800840E1C /* SendingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingVC.swift; sourceTree = "<group>"; };
 		27C262931F96DCC800840E1C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		27C262951F96DEDF00840E1C /* MapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
@@ -105,6 +117,9 @@
 				27C262931F96DCC800840E1C /* FirstViewController.swift */,
 				27C262951F96DEDF00840E1C /* MapViewExtension.swift */,
 				27C262971F96DF5D00840E1C /* Message.swift */,
+				27B7A16A1FAAA87300108382 /* UserItem.swift */,
+				27B7A16C1FAAA87D00108382 /* FriendTableViewController.swift */,
+				27B7A16E1FAAA88500108382 /* FriendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 		27A5FFE81F92F2DB0050AACF = {
 			isa = PBXGroup;
 			children = (
+				27B7A1631FAAA82A00108382 /* New Group */,
 				2727A6B11F93113A0045DC8F /* GoogleService-Info.plist */,
 				2727A6AA1F930FD20045DC8F /* Controller */,
 				27A5FFF31F92F2DB0050AACF /* Bear */,
@@ -162,6 +178,16 @@
 				27A500001F92F2DB0050AACF /* Info.plist */,
 			);
 			path = Bear;
+			sourceTree = "<group>";
+		};
+		27B7A1631FAAA82A00108382 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				27B7A1701FAAA8DF00108382 /* CustomButton.swift */,
+				27B7A1641FAAA85400108382 /* HoshiTextField.swift */,
+				27B7A1661FAAA85700108382 /* TextFieldEffects.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		8F57A6E23F2FBAEBDA383691 /* Pods */ = {
@@ -401,13 +427,19 @@
 			files = (
 				2727A6AC1F930FE70045DC8F /* LoginViewController.swift in Sources */,
 				27C262921F96CCC800840E1C /* SendingVC.swift in Sources */,
+				27B7A16F1FAAA88500108382 /* FriendViewController.swift in Sources */,
 				2727A6B01F9310280045DC8F /* WelcomeViewController.swift in Sources */,
+				27B7A1671FAAA85700108382 /* TextFieldEffects.swift in Sources */,
 				27C262981F96DF5D00840E1C /* Message.swift in Sources */,
+				27B7A16B1FAAA87300108382 /* UserItem.swift in Sources */,
 				27A5FFF71F92F2DB0050AACF /* ViewController.swift in Sources */,
 				27A5FFF51F92F2DB0050AACF /* AppDelegate.swift in Sources */,
 				2727A6AE1F9310060045DC8F /* RegisterViewController.swift in Sources */,
+				27B7A16D1FAAA87D00108382 /* FriendTableViewController.swift in Sources */,
 				27C262941F96DCC800840E1C /* FirstViewController.swift in Sources */,
 				27C262961F96DEDF00840E1C /* MapViewExtension.swift in Sources */,
+				27B7A1651FAAA85400108382 /* HoshiTextField.swift in Sources */,
+				27B7A1711FAAA8DF00108382 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

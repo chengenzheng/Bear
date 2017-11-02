@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -369,17 +369,45 @@
             </objects>
             <point key="canvasLocation" x="1636" y="145.27736131934034"/>
         </scene>
-        <!--View Controller-->
+        <!--Friend View Controller-->
         <scene sceneID="1py-Eb-ZOH">
             <objects>
-                <viewController id="u9F-eY-fLH" sceneMemberID="viewController">
+                <viewController id="u9F-eY-fLH" customClass="FriendViewController" customModule="Bear" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EY8-qe-6FA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pKb-Hc-ftX">
+                                <rect key="frame" x="97" y="122" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIx-bd-Ufb">
+                                <rect key="frame" x="97" y="218" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-hR-mGT" customClass="CustomButton" customModule="Bear" customModuleProvider="target">
+                                <rect key="frame" x="122" y="306" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnAddUser:" destination="u9F-eY-fLH" eventType="touchUpInside" id="CBA-fc-Wyi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="led-AG-Ewr"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="qq6-wa-VXD"/>
+                    <connections>
+                        <outlet property="txtFirstname" destination="EIx-bd-Ufb" id="NNG-VQ-Rwg"/>
+                        <outlet property="txtLastname" destination="pKb-Hc-ftX" id="wbI-2v-FbJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B35-8h-93w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -428,11 +456,61 @@
                         <segue destination="2Sr-1J-zSr" kind="relationship" relationship="viewControllers" id="Hwe-qT-1p8"/>
                         <segue destination="ehB-AN-tLf" kind="relationship" relationship="viewControllers" id="0pd-Ah-TEZ"/>
                         <segue destination="u9F-eY-fLH" kind="relationship" relationship="viewControllers" id="vTq-CV-Fpv"/>
+                        <segue destination="w7T-JZ-y2E" kind="relationship" relationship="viewControllers" id="jmq-5B-vah"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNc-g0-JTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="793" y="1230"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="TPl-uW-4R0">
+            <objects>
+                <tableViewController id="w7T-JZ-y2E" customClass="FriendTableViewController" customModule="Bear" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oRv-Ru-KJj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="aRw-f2-w7J" detailTextLabel="Lbr-pI-Rvr" imageView="z9E-tg-53a" style="IBUITableViewCellStyleSubtitle" id="hEF-q0-wpe">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hEF-q0-wpe" id="NNR-tF-9i4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aRw-f2-w7J">
+                                            <rect key="frame" x="74" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lbr-pI-Rvr">
+                                            <rect key="frame" x="74" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="download" id="z9E-tg-53a">
+                                            <rect key="frame" x="16" y="0.0" width="43" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w7T-JZ-y2E" id="egz-EP-ICC"/>
+                            <outlet property="delegate" destination="w7T-JZ-y2E" id="4xa-vK-5Za"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Woj-4Q-4F7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dE-05-XzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="2033"/>
         </scene>
         <!--SendingVC-->
         <scene sceneID="F1a-T7-oOJ">
@@ -487,6 +565,7 @@
         <image name="bear-side-view-silhouette_318-42619" width="103" height="103"/>
         <image name="bg" width="156" height="156"/>
         <image name="bg 2" width="374" height="60"/>
+        <image name="download" width="200" height="203"/>
         <image name="group" width="23" height="27"/>
         <image name="line" width="375" height="2"/>
         <image name="line 2" width="375" height="2"/>
