@@ -12,7 +12,7 @@ protocol DataSentDelegate {
     func userDidEnterData(Data: String)
 }
 
-class SendingVC: UIViewController {
+class NameEditViewController: UIViewController {
     
     @IBOutlet weak var dataEntryTextField: UITextField!
     
@@ -32,13 +32,10 @@ class SendingVC: UIViewController {
             if dataEntryTextField.text != nil {
                 let data = dataEntryTextField.text
                 delegate?.userDidEnterData(Data: data!)
-                dismiss(animated: true, completion: nil)
+                navigationController?.popViewController(animated: true)
+//                dismiss(animated: true, completion: nil)
             }
-            
-            
         }
-        
-        
     }
     
     

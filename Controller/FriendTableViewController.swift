@@ -38,7 +38,9 @@ class FriendTableViewController: UITableViewController {
                 //print(gItem.value!)
                 
                 // convert the snapshot JSON value to your Struct type
-                let newValue = UserItem(snapshot: gItem as! DataSnapshot)
+                let newValue = UserItem(snapshot:gItem as! DataSnapshot)
+                
+//                let newValue = UserItem(snapshot: gItem as! DataSnapshot, firstName: <#String#>)
                 newItems.append(newValue)
             }
             
@@ -91,6 +93,18 @@ class FriendTableViewController: UITableViewController {
         toggleCellCheckbox(cell, isCompleted: toggledCompletion)
         userItem.isApproved = toggledCompletion
         tableView.reloadData()
+        
+        let user = User()
+        user.id = userItem.key
+        
+//        user.setValuesForKeys(dictionary)
+        self.showChatControllerForUser(user: user)
+    }
+    
+    func showChatControllerForUser(user: User) {
+        let chatController = ChatController(collectionViewLayout: UICollectionViewFlowLayout())
+        chatController.user = user
+        navigationController?.pushViewController(chatController, animated: true)
     }
     
     func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {

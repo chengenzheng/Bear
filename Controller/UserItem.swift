@@ -14,7 +14,7 @@ struct UserItem {
     let key: String
     let lastName: String
     let firstName: String
-    let ref: FIRDatabaseReference?
+    let ref: DatabaseReference?
     var isApproved: Bool
     
     init(lastName: String, firstName: String, isApproved: Bool, key: String = "") {
@@ -25,7 +25,7 @@ struct UserItem {
         self.ref = nil
     }
     
-    init(snapshot: FIRDataSnapshot) {
+    init(snapshot: DataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
         lastName = snapshotValue["LastName"] as! String // must map to firebase names
