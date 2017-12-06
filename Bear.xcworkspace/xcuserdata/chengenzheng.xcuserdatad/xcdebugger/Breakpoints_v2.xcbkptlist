@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/ChatController.swift"
-            timestampString = "532120677.515342"
+            timestampString = "534155389.12207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/MessagesController.swift"
-            timestampString = "532106967.589567"
+            timestampString = "533016523.937701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -147,13 +147,13 @@
                   symbolName = "closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Bear.RegisterViewController.btnRegister_TouchUpInside(__ObjC.UIButton) -&gt; ()"
                   moduleName = "Bear"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chengenzheng/Desktop/Bear%203/Controller/RegisterViewController.swift"
-                  timestampString = "532436735.087145"
+                  urlString = "file:///Users/chengenzheng/Desktop/Bear1111/Controller/RegisterViewController.swift"
+                  timestampString = "534201835.74549"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "1897">
+                  offsetFromSymbolStart = "1388">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -162,13 +162,13 @@
                   symbolName = "closure #1 (Swift.Optional&lt;__ObjC.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Bear.RegisterViewController.btnRegister_TouchUpInside(__ObjC.UIButton) -&gt; ()"
                   moduleName = "Bear"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chengenzheng/Desktop/Bear%203/Controller/RegisterViewController.swift"
-                  timestampString = "532436735.091493"
+                  urlString = "file:///Users/chengenzheng/Desktop/Bear1111/Controller/RegisterViewController.swift"
+                  timestampString = "534201835.747467"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "90">
+                  offsetFromSymbolStart = "80">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -186,6 +186,22 @@
             startingLineNumber = "58"
             endingLineNumber = "58"
             landmarkName = "btnRegister_TouchUpInside(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/CurrentLocationViewController.swift"
+            timestampString = "534199740.749571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getLocation()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -20,6 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        FirebaseApp.configure()
         return true
     }
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "DataModel") //instantiate a new NSPC with the name of the data model
+        container.loadPersistentStores(completionHandler: { //to loadPersistentStores(), which loads the data from the database into memory and sets up the Core Data stack
+            storeDescription, error in
+            if let error = error {
+                fatalError("Could load data store: \(error)")
+            }
+        })
+        return container
+    }()
+    
+    
+    lazy var managedObjectContext: NSManagedObjectContext = self.persistentContainer.viewContext
+    
+    
+   
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

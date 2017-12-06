@@ -32,30 +32,42 @@ class MpaViewController: UIViewController {
         
         let initialLocation = CLLocation(latitude: 43.038611, longitude: -87.928759)
         centerMapOnLocation(Location: initialLocation)
-        messageNodeRef = Database.database().reference().child("messages")
+        messageNodeRef = Database.database().reference().child("positions")
         
-        let pinMessageID = "msg-1"
-        var pinMessage: Message?
-        messageNodeRef.child(pinMessageID).observe(.value, with: { (snapshot: DataSnapshot) in
+        messageNodeRef.observe(.childAdded, with: { (snapshot: DataSnapshot) in
             if let dictionary = snapshot.value as? [String: Any]
             {
-                if pinMessage != nil
-                {
-                    self.mapView.removeAnnotation(pinMessage!)
+                guard let la = dictionary["la"] else{
+                    return
                 }
-                let pinLat = dictionary["latitude"] as! Double
-                let pinLong = dictionary["longitude"] as! Double
-                let messageDisabled = dictionary["isDisabled"] as! Bool
-                let message = Message(title: (dictionary["title"] as? String)!, locationName: (dictionary["locationName"] as? String)!, username: (dictionary["username"] as? String)!, coordinate: CLLocationCoordinate2D(latitude: pinLat, longitude: pinLong), isDisabled: messageDisabled)
-                pinMessage = message
-                if !message.isDisabled {
-                    self.mapView.addAnnotation(message)
+                guard let lo = dictionary["lo"] else{
+                    return
                 }
+                
+                let title = dictionary["title"] as! String
+                let dest = dictionary["description"] as! String
+                
+                //创建一个大头针对象
+                let objectAnnotation = MKPointAnnotation()
+                //设置大头针的显示位置
+                objectAnnotation.coordinate = CLLocation(latitude: (la as AnyObject).doubleValue,
+                                                         longitude: (lo as AnyObject).doubleValue).coordinate
+                //设置点击大头针之后显示的标题
+                objectAnnotation.title = title
+                //设置点击大头针之后显示的描述
+                objectAnnotation.subtitle = dest
+                //添加大头针
+                self.mapView.addAnnotation(objectAnnotation)
+                
+                
             }
             
         })
     }
     
+    @IBAction func onAddEventClick(_ sender: UIBarButtonItem) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

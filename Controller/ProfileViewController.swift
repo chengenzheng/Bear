@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController, DataSentDelegate, UIImagePickerCo
     
     @IBOutlet weak var receivingLabel: UILabel!
     
+ 
     
     @IBOutlet weak var imgPhoto: UIImageView!
     
@@ -43,6 +44,8 @@ class ProfileViewController: UIViewController, DataSentDelegate, UIImagePickerCo
         
         //  }
     }
+   
+    
     
     
     @IBAction func btnTakePhoto_TouchUpInside(_ sender: UIButton) {
@@ -184,6 +187,19 @@ class ProfileViewController: UIViewController, DataSentDelegate, UIImagePickerCo
             
         }
     }
+    
+    @IBAction func signOut(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            dismiss(animated: true, completion: nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: \(signOutError.localizedDescription)")
+        }
+    }
+    
+  
     
 }
 
