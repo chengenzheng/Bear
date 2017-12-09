@@ -148,12 +148,12 @@
                   moduleName = "Bear"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chengenzheng/Desktop/Bear1111/Controller/RegisterViewController.swift"
-                  timestampString = "534201835.74549"
+                  timestampString = "534293835.483192"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "1388">
+                  offsetFromSymbolStart = "1897">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -163,12 +163,12 @@
                   moduleName = "Bear"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chengenzheng/Desktop/Bear1111/Controller/RegisterViewController.swift"
-                  timestampString = "534201835.747467"
+                  timestampString = "534293835.487242"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "90">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -196,12 +196,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/CurrentLocationViewController.swift"
-            timestampString = "534199740.749571"
+            timestampString = "534293835.368018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "getLocation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/ProfileViewController.swift"
+            timestampString = "534243506.777027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "signOut(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
